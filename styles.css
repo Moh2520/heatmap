@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-section label,
+.input-section input,
+.input-section button {
+    margin: 10px;
+}
+
+.heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.heatmap-item {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    gap: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.calendar-item {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.calendar-header {
+    font-weight: bold;
+    background: #ddd;
+    color: #333;
+    border-radius: 4px;
+}

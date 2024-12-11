@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Map Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Heat Map Creator</h1>
+        <div class="input-section">
+            <label for="task">Task Name:</label>
+            <input type="text" id="task" placeholder="Enter task name">
+            <label for="value">Value (0-100):</label>
+            <input type="number" id="value" placeholder="Enter value" min="0" max="100">
+            <button id="addTask">Add Task</button>
+        </div>
+        <div class="heatmap-section">
+            <h2>Heat Map</h2>
+            <div id="heatmapGrid" class="heatmap-grid"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <label for="project">Project Name:</label>
+            <input type="text" id="project" placeholder="Enter project name">
+            
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" placeholder="Enter number of days" min="1">
+            
+            <button id="generateCalendar">Generate Calendar</button>
+        </div>
+        
+        <div class="calendar-section">
+            <h2>Heat Map Calendar</h2>
+            <div id="calendarGrid" class="calendar-grid"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
